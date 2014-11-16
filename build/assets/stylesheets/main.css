@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box; }
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
@@ -52,14 +52,14 @@ body {
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
 
-h1, h2, h3, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
   margin: 0.5rem 0 0.5rem 0;
   color: #e99200;
   font-family: "ff-dagny-web-pro", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 700;
   letter-spacing: -0.025rem; }
-  h1 b, h1 span, h2 b, h2 h3, h2 span, h2 h3, h3 b, h3 span, h4 b, h4 span, h5 b, h5 span, h6 b, h6 span {
+  h1 b, h1 span, h2 b, h2 span, h3 b, h3 span, h4 b, h4 span, h5 b, h5 span, h6 b, h6 span {
     font-weight: inherit;
     font-style: inherit; }
 
@@ -70,8 +70,13 @@ h1 {
   h1 span {
     color: #e99200; }
 
-h2, h3 {
-  font-size: 1.2rem; }
+h2 {
+  font-size: 1.2rem;
+  margin: 0 0 1rem 0; }
+
+h3 {
+  font-size: 1rem;
+  margin: 0; }
 
 a {
   outline: none;
@@ -89,11 +94,16 @@ a {
 b {
   font-weight: 700; }
 
+em {
+  font-style: italic; }
+
 ul, ol {
   margin: 0 0 2rem 0; }
   ul li, ol li {
-    line-height: 1.5;
-    margin-bottom: 0.5rem; }
+    font-size: 0.95rem;
+    line-height: 1.3;
+    margin-bottom: 1.25rem;
+    font-family: "ff-dagny-web-pro", "Helvetica Neue", sans-serif; }
 
 ol {
   display: block;
@@ -203,32 +213,49 @@ p {
   background-size: 100% auto;
   -webkit-animation: reveal 1s ease-in;
   animation: reveal 1s ease-in;
-  margin-top: 35%; }
+  margin-top: 33%; }
 
 header {
   width: 100%;
   border-bottom: 1px solid rgba(212, 212, 212, 0.3);
-  margin: 0 0 3rem 0; }
-  @media screen and (min-width: 1025px) { }
+  margin: 0 0 2rem 0; }
+  @media screen and (min-width: 768px) {
+    header {
+      margin: 0 0 4rem 0; } }
   header h1 {
-    text-align: right;
-    margin: 0 0 0.2rem 0; }
+    text-align: left;
+    font-size: 1.4rem;
+    margin: 0 0 0.75rem 0;
+    line-height: 1.1; }
+    @media screen and (min-width: 768px) {
+      header h1 {
+        font-size: 1.75rem;
+        text-align: right;
+        margin: 0 0 0.2rem 0; } }
   header .logo {
     display: inline-block;
-    float: left;
-    clear: none;
-    margin: -0.55rem 0 0 0;
+    clear: both;
+    margin: -0.75rem 0 0.5rem 0;
     width: 50px;
     height: 35px;
     background: url('../images/logo.png') no-repeat center center;
     background-size: 50px 35px; }
+    @media screen and (min-width: 768px) {
+      header .logo {
+        float: left;
+        clear: none;
+        margin: -0.65rem 0 0 0; } }
   header .tagline {
-    font-family: "ff-dagny-web-pro", "Helvetica Neue", sans-serif;
-    font-weight: 700;
-    color: #fff;
-    text-align: right;
-    float: right;
-    margin: 0.5rem 0 0 0; }
+    display: none; }
+    @media screen and (min-width: 768px) {
+      header .tagline {
+        display: inline-block;
+        font-family: "ff-dagny-web-pro", "Helvetica Neue", sans-serif;
+        font-weight: 700;
+        color: #fff;
+        text-align: right;
+        float: right;
+        margin: 0.5rem 0 0 0; } }
 
 section {
   width: 100%;
@@ -239,12 +266,38 @@ section {
   position: relative; }
 
 .col {
-  width: 24%;
-  margin: 0 1.25% 0 0;
+  width: 100%;
+  margin: 0 0 2rem 0;
   float: left;
-  clear: none;
-  display: inline-block;
-  background: #333; }
+  clear: both;
+  display: inline-block; }
+  @media screen and (min-width: 768px) {
+    .col {
+      width: 46%;
+      margin: 0 2% 0 2%;
+      float: left;
+      clear: none; } }
+  @media screen and (min-width: 1025px) {
+    .col {
+      width: 23%;
+      margin: 0 2.5% 0 0; } }
 
 .col:last-child {
   margin-right: 0; }
+
+ul li h3 {
+  font-size: 0.95rem; }
+ul li .ss-icon {
+  font-size: 0.8rem;
+  padding: 0 0.4rem 0 0; }
+
+footer {
+  display: block;
+  clear: both;
+  padding: 3rem 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.7rem;
+  line-height: 1.75; }
+  footer span {
+    padding: 0 0.25rem;
+    color: rgba(212, 212, 212, 0.3); }

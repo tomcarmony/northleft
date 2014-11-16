@@ -56,10 +56,13 @@ h1 {
 
 h2 {
   font-size: 1.2rem;
+  margin: 0 0 1.0rem 0;
 }
 
 h3 {
-  @extend h2;
+  // @extend h2;
+  font-size: 1.0rem;
+  margin: 0;
 }
 
 
@@ -87,6 +90,10 @@ b {
   font-weight: $fw-bold;
 }
 
+em {
+  font-style: italic;
+}
+
 
 //  Lists
 // ---------------------------------------------
@@ -94,8 +101,10 @@ b {
 ul, ol {
   margin: 0 0 2rem 0;
   li {
-    line-height: 1.5;
-    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+    line-height: 1.3;
+    margin-bottom: 1.25rem;
+    font-family: $ff-body;
   }
 }
 
