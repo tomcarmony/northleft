@@ -1,0 +1,25 @@
+//  ============================================
+//  Main
+//  =============================================
+
+@charset 'utf-8';
+
+// Settings
+@import 'global';
+
+// Tools
+@import 'mixins';
+@import 'vendor/bourbon/bourbon';
+@import 'vendor/grid-settings';
+@import 'vendor/neat/neat';
+
+// Generic
+@import 'vendor/reset';
+
+//  Components
+@import 'components/base';
+@import 'components/layout';
+@import 'components/state';
+
+@import 'components/home';
+ 

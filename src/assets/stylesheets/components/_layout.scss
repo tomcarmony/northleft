@@ -1,0 +1,33 @@
+//  ============================================
+//  Layout
+//  ============================================
+
+.vhflex {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  footer {
+    width: 100%;
+    min-height: 400px;
+    @include media($tablet) {
+      min-height: 100px;
+    }
+  }
+}
+
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+
+.container {
+  @include outer-container;
+  overflow: visible;
+  padding: 0 1rem;
+  @include media($desktop) {
+    padding: 0 2rem;
+  }
+}

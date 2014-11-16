@@ -1,0 +1,250 @@
+* {
+  box-sizing: border-box; }
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  overflow-y: scroll;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  min-height: 100%;
+  font-size: 16px; }
+  @media screen and (min-width: 768px) {
+    html {
+      font-size: 16px; } }
+
+body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: black;
+  color: #bebebe;
+  font: "ff-dagny-web-pro", "Helvetica Neue", sans-serif 1rem 400;
+  line-height: 1.3;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%; }
+
+h1, h2, h3, h3, h4, h5, h6 {
+  margin: 0.5rem 0 0.5rem 0;
+  color: #e99200;
+  font-family: "ff-dagny-web-pro", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: -0.025rem; }
+  h1 b, h1 span, h2 b, h2 h3, h2 span, h2 h3, h3 b, h3 span, h4 b, h4 span, h5 b, h5 span, h6 b, h6 span {
+    font-weight: inherit;
+    font-style: inherit; }
+
+h1 {
+  font-size: 1.75rem;
+  margin: 0 0 0.5rem 0;
+  color: #fff; }
+  h1 span {
+    color: #e99200; }
+
+h2, h3 {
+  font-size: 1.2rem; }
+
+a {
+  outline: none;
+  color: inherit;
+  text-decoration: none;
+  word-wrap: break-word;
+  transition: 0.1s;
+  color: white;
+  font-weight: 700; }
+  a:hover {
+    color: #00a8ff; }
+  a:active {
+    color: #e99200; }
+
+b {
+  font-weight: 700; }
+
+ul, ol {
+  margin: 0 0 2rem 0; }
+  ul li, ol li {
+    line-height: 1.5;
+    margin-bottom: 0.5rem; }
+
+ol {
+  display: block;
+  list-style-type: decimal; }
+
+pre, code {
+  font-size: 0.75rem;
+  font-family: 'source-code-pro', Monaco, monospace; }
+
+pre {
+  overflow: scroll;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: #666;
+  color: #fff;
+  line-height: 1.5; }
+
+code {
+  padding: 0 0.25rem;
+  background-color: #fff;
+  color: #666; }
+
+img, embed, object, video {
+  max-width: 100%; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+p {
+  font-family: "ff-dagny-web-pro", "Helvetica Neue", sans-serif;
+  margin: 0 0 2rem 0; }
+  @media screen and (min-width: 768px) { }
+
+.vhflex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .vhflex footer {
+    width: 100%;
+    min-height: 400px; }
+    @media screen and (min-width: 768px) {
+      .vhflex footer {
+        min-height: 100px; } }
+
+.flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.container {
+  *zoom: 1;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: visible;
+  padding: 0 1rem; }
+  .container:before, .container:after {
+    content: " ";
+    display: table; }
+  .container:after {
+    clear: both; }
+  @media screen and (min-width: 1025px) {
+    .container {
+      padding: 0 2rem; } }
+
+.no-margin {
+  margin: 0; }
+
+.margin-top {
+  margin-top: 4rem; }
+  @media screen and (min-width: 768px) {
+    .margin-top {
+      margin-top: 6rem; } }
+
+.text-center {
+  text-align: center; }
+
+.hide {
+  display: none; }
+
+.reveal {
+  -webkit-animation: reveal 500ms ease-in;
+          animation: reveal 500ms ease-in; }
+
+.error {
+  color: #cc181e;
+  font-size: 0.75rem; }
+
+.home {
+  background: black url('../images/hero-sunset.jpg') no-repeat center top;
+  background-size: 100% auto;
+  -webkit-animation: reveal 1s ease-in;
+  animation: reveal 1s ease-in;
+  margin-top: 35%; }
+
+header {
+  width: 100%;
+  border-bottom: 1px solid rgba(212, 212, 212, 0.3);
+  margin: 0 0 3rem 0; }
+  @media screen and (min-width: 1025px) { }
+  header h1 {
+    text-align: right;
+    margin: 0 0 0.2rem 0; }
+  header .logo {
+    display: inline-block;
+    float: left;
+    clear: none;
+    margin: -0.55rem 0 0 0;
+    width: 50px;
+    height: 35px;
+    background: url('../images/logo.png') no-repeat center center;
+    background-size: 50px 35px; }
+  header .tagline {
+    font-family: "ff-dagny-web-pro", "Helvetica Neue", sans-serif;
+    font-weight: 700;
+    color: #fff;
+    text-align: right;
+    float: right;
+    margin: 0.5rem 0 0 0; }
+
+section {
+  width: 100%;
+  height: auto;
+  position: relative; }
+
+.container {
+  position: relative; }
+
+.col {
+  width: 24%;
+  margin: 0 1.25% 0 0;
+  float: left;
+  clear: none;
+  display: inline-block;
+  background: #333; }
+
+.col:last-child {
+  margin-right: 0; }

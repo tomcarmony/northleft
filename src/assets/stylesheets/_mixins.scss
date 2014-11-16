@@ -1,0 +1,13 @@
+//  ============================================
+//  Mixins
+//  ============================================
+
+@mixin color-link($color) {
+  color: $color;
+  &:hover {
+    color: lighten($color, 5%);
+  }
+  &:active {
+    color: adjust-color($color, $saturation: 25%, $lightness: -10%);
+  }
+}

@@ -1,0 +1,71 @@
+.home {
+  background: rgb(0,0,0) url('../images/hero-sunset.jpg') no-repeat center top;
+  background-size: 100% auto;
+  -webkit-animation: reveal 1s ease-in;
+  animation: reveal 1s ease-in;
+  margin-top: 35%;  
+}
+
+
+
+header {
+  width: 100%;
+  border-bottom: 1px solid $cl-border;
+  margin: 0 0 3.0rem 0;
+  @include media($desktop) {
+  }  
+  h1 {
+    text-align: right;
+    margin: 0 0 0.2rem 0;
+  }
+
+  .logo {
+    display: inline-block;
+    float: left;
+    clear: none;
+    margin: -0.55rem 0 0 0;
+    width: 50px;
+    height: 35px;
+    background:  url('../images/logo.png') no-repeat center center;
+    background-size: 50px 35px;
+  }
+
+  .tagline {
+    font-family: $ff-body;
+    font-weight: $fw-bold;
+    color: #fff;
+    text-align: right;
+    float: right;
+    margin: 0.5rem 0 0 0;
+  }
+}
+
+section {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.container {
+  position: relative;
+}
+
+.col {
+  width: 24%;
+  margin: 0 1.25% 0 0;
+  float: left;
+  clear: none;
+  display: inline-block;
+  background: #333;
+}
+
+.col:last-child {
+  margin-right: 0;
+}
+
+
+
+
+
+
+

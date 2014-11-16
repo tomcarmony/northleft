@@ -1,0 +1,49 @@
+//  ============================================
+//  Variables
+//  ============================================
+
+//  Typography
+// ---------------------------------------------
+
+// Font Stacks
+$ff-headline: "ff-dagny-web-pro", "Helvetica Neue", sans-serif;
+$ff-body: $ff-headline;
+
+// Font Sizes
+$fs-extra-large: 3.375rem;
+$fs-large: 2.5rem;
+$fs-medium: 1.5rem;
+$fs-default: 1rem;
+$fs-small: 0.75rem;
+
+// Font Weights
+$fw-default: 400;
+$fw-bold: 700;
+
+// Letter Spacing
+$ls-headline: -0.025rem;
+
+//  Colors
+// ---------------------------------------------
+
+
+//Sunset
+
+$cl-primary: rgb(233,146,0);
+$cl-link: rgb(255,255,255);
+$cl-hover: rgb(0,168,255);
+$cl-body: rgb(190,190,190);
+$cl-border: rgba(212,212,212,0.3);
+
+
+//  Transitions
+// ---------------------------------------------
+$ts-default: all 0.1s ease;
+$ts-medium: all 0.25s ease-in-out;
+$ts-long: all 0.50s ease-in-out;
+
+//  Radii
+// ---------------------------------------------
+$br-corners: 4px;
+
+

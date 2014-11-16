@@ -1,0 +1,37 @@
+Options +FollowSymlinks
+RewriteEngine on
+# RewriteCond %{REMOTE_ADDR} !=207.161.221.197
+# RewriteCond %{REMOTE_ADDR} !=75.151.124.233
+# RewriteCond %{REMOTE_ADDR} !=71.231.161.47
+# RewriteCond %{REMOTE_ADDR} !=24.18.223.83
+# RewriteCond %{REMOTE_ADDR} !=24.19.58.198
+# RewriteCond %{REMOTE_ADDR} !=111.111.111.111
+# RewriteCond %{REQUEST_URI} !/brb/*
+# RewriteRule .* /brb/brb.html [R,L]
+
+RewriteRule careers.html /careers [R,L]
+
+RewriteRule a/css/careers.css /assets/stylesheets/careers.css [R,L]
+
+ErrorDocument 404 /
+
+<IfModule mod_expires.c>
+
+    ExpiresActive on
+    ExpiresDefault                                      "access plus 0 seconds"
+
+  # CSS
+    ExpiresByType text/css                              "access plus 0 seconds"
+
+  # Data interchange
+    ExpiresByType application/json                      "access plus 0 seconds"
+    ExpiresByType application/xml                       "access plus 0 seconds"
+    ExpiresByType text/xml                              "access plus 0 seconds"
+
+  # Favicon (cannot be renamed!)
+    ExpiresByType image/x-icon                          "access plus 0 seconds"
+
+  # HTML
+    ExpiresByType text/html                             "access plus 0 seconds"
+
+</IfModule>
