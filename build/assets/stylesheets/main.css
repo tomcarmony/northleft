@@ -137,6 +137,27 @@ p {
   margin: 0 0 2rem 0; }
   @media screen and (min-width: 768px) { }
 
+span.mobile {
+  display: inline; }
+  @media screen and (min-width: 768px) {
+    span.mobile {
+      display: none; } }
+
+span.tablet {
+  display: none; }
+  @media screen and (min-width: 768px) {
+    span.tablet {
+      display: inline; } }
+  @media screen and (min-width: 1025px) {
+    span.tablet {
+      display: none; } }
+
+span.desktop {
+  display: none; }
+  @media screen and (min-width: 1025px) {
+    span.desktop {
+      display: inline; } }
+
 .vhflex {
   display: -webkit-box;
   display: -webkit-flex;
@@ -218,7 +239,8 @@ p {
 header {
   width: 100%;
   border-bottom: 1px solid rgba(212, 212, 212, 0.3);
-  margin: 0 0 2rem 0; }
+  margin: 0 0 2rem 0;
+  position: relative; }
   @media screen and (min-width: 768px) {
     header {
       margin: 0 0 4rem 0; } }
@@ -235,16 +257,18 @@ header {
   header .logo {
     display: inline-block;
     clear: both;
-    margin: -0.75rem 0 0.5rem 0;
+    margin: 0 0 0.5rem 0;
     width: 50px;
     height: 35px;
     background: url('../images/logo.png') no-repeat center center;
     background-size: 50px 35px; }
     @media screen and (min-width: 768px) {
       header .logo {
+        position: absolute;
+        bottom: 0.75rem;
         float: left;
         clear: none;
-        margin: -0.65rem 0 0 0; } }
+        margin: 0; } }
   header .tagline {
     display: none; }
     @media screen and (min-width: 768px) {
