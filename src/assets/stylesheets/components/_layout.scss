@@ -29,5 +29,23 @@
   padding: 0 1rem;
   @include media($desktop) {
     padding: 0 2rem;
+    width: 90%;
   }
 }
+
+.relative { position: relative }
+.absolute { position: absolute }
+.fixed    { position: fixed }
+
+.top-0    { top: 0 }
+.right-0  { right: 0 }
+.bottom-0 { bottom: 0 }
+.left-0   { left: 0 }
+
+.z1 { z-index: 1 }
+.z2 { z-index: 2 }
+.z3 { z-index: 3 }
+
+.half { width: 50%; }
+.fl-left { float: left; clear: none; }
+.fl-right { float: right; clear: none; }

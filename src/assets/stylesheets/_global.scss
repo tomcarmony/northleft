@@ -6,12 +6,15 @@
 // ---------------------------------------------
 
 // Font Stacks
-$ff-headline: "ff-dagny-web-pro", "Helvetica Neue", sans-serif;
+$ff-headline: "Iowan Old Style Pro Roman", Georgia, serif;
 $ff-body: $ff-headline;
+$ff-bold: "Iowan Old Style Pro Bold", Georgia, serif;
+$ff-sans: "Source Sans Pro", "Helvetica Neue", sans-serif;
 
 // Font Sizes
-$fs-extra-large: 3.375rem;
+$fs-extra-large: 4.5rem;
 $fs-large: 2.5rem;
+$fs-extra-medium: 1.75rem;
 $fs-medium: 1.5rem;
 $fs-default: 1rem;
 $fs-small: 0.75rem;
@@ -21,7 +24,7 @@ $fw-default: 400;
 $fw-bold: 700;
 
 // Letter Spacing
-$ls-headline: -0.025rem;
+$ls-headline: -0.1rem;
 
 //  Colors
 // ---------------------------------------------
@@ -29,12 +32,14 @@ $ls-headline: -0.025rem;
 
 //Sunset
 
-$cl-primary: rgb(233,146,0);
+$cl-primary: rgb(0,0,0);
 $cl-link: rgb(255,255,255);
+$cl-gray: rgb(162,171,177);
 $cl-hover: rgb(0,168,255);
 $cl-body: rgb(190,190,190);
 $cl-border: rgba(212,212,212,0.3);
 
+$gr-primary: linear-gradient(to bottom, #2C2E36 0%, #000000 70%);
 
 //  Transitions
 // ---------------------------------------------
@@ -45,5 +50,3 @@ $ts-long: all 0.50s ease-in-out;
 //  Radii
 // ---------------------------------------------
 $br-corners: 4px;
-
-
